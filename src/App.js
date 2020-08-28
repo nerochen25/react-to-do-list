@@ -32,9 +32,9 @@ class App extends React.Component{
   }
 
   addItem(e){
-    e.preventDefault(); //button will not fresh the page
+    e.preventDefault(); //button will not refresh the page
     const newItem = this.state.currentItem;
-    console.log(newItem);
+    // console.log(newItem);
     if (newItem.text !== ""){
       const items = [...this.state.items, newItem];
       this.setState({
